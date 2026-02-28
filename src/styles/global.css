@@ -1,7 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Press+Start+2P&family=VT323&display=swap");
 @import "tailwindcss";
-@plugin "daisyui" {
-  themes:
-    light --default,
-    dark --prefersdark,
-    retro;
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "custom";
+  default: true;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-base-100: oklch(14% 0 0);
+  --color-base-200: oklch(20% 0 0);
+  --color-base-300: oklch(26% 0 0);
+  --color-base-content: #ffedd1;
+  --color-primary: oklch(86% 0.022 252.894);
+  --color-primary-content: oklch(26% 0.079 36.259);
+  --color-secondary: #da6b52;
+  --color-secondary-content: oklch(27% 0.105 12.094);
+  --color-accent: #9bb29e;
+  --color-accent-content: oklch(25% 0.09 281.288);
+  --color-neutral: #242424;
+  --color-neutral-content: oklch(98% 0 0);
+  --color-info: oklch(91% 0.08 205.041);
+  --color-info-content: oklch(30% 0.056 229.695);
+  --color-success: oklch(89% 0.057 293.283);
+  --color-success-content: oklch(27% 0.046 192.524);
+  --color-warning: oklch(92% 0.12 95.746);
+  --color-warning-content: oklch(27% 0.077 45.635);
+  --color-error: oklch(81% 0.117 11.638);
+  --color-error-content: oklch(27% 0.105 12.094);
+  --radius-selector: 0rem;
+  --radius-field: 0rem;
+  --radius-box: 0rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 2px;
+  --depth: 0;
+  --noise: 1;
+  --font-sans: "VT323", monospace;
 }
